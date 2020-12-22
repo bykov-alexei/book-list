@@ -26,6 +26,6 @@ class SaveUserToFile
      */
     public function handle(Registered $event)
     {
-        file_put_contents('users.txt', $event->data->name . '\n', FILE_APPEND);
+        file_put_contents('users.txt', $event->data->name . "\n", FILE_APPEND);
     }
 }
